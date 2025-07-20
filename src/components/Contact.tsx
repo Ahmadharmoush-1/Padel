@@ -1,4 +1,4 @@
-import { Button } from "../components/ui/Button";
+import { Button } from "./ui/Button";;
 import { Card, CardContent } from "../components/ui/card";
 import { MessageCircle, MapPin, Clock, Phone } from "lucide-react";
 

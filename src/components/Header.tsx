@@ -1,4 +1,4 @@
-import { Button } from "../components/ui/Button";
+import { Button } from "./ui/Button";
 import { MessageCircle, Menu } from "lucide-react";
 // import logo from "../assets/logo.png";
 
