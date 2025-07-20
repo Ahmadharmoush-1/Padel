@@ -27,7 +27,7 @@ export const Header = () => {
 />
 
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-foreground">ThePadelMount</h1>
+              <h1 className="text-xl font-bold text-foreground">{"PADELNAME"}</h1>
               <p className="text-xs text-muted-foreground">Premium Courts</p>
             </div>
           </div>

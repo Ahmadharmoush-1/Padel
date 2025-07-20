@@ -29,7 +29,7 @@ export const Hero = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
           <span className="bg-gradient-accent bg-clip-text text-transparent">
-            ThePadelMount
+            {"PADELNAME"}
 
           </span>
           <br />
