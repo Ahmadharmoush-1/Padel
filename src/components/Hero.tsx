@@ -1,4 +1,5 @@
-import { Button } from "../components/ui/Button";
+import { Button } from "./ui/Button";
+
 import { ChevronDown } from "lucide-react";
 // import heroImage from "@/assets/hero-image.jpg";
 
