@@ -2,103 +2,122 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* Premium Padel Court Design System - All colors MUST be HSL */
+
 @layer base {
   :root {
-    --background: 0 0% 98%; /* light gray */
-    --foreground: 240 4% 10%; /* rich charcoal */
+    /* Core Brand Colors */
+    --background: 215 45% 8%; /* Dark navy #0A0F1C */
+    --foreground: 0 0% 98%; /* Soft white */
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 4% 10%;
+    --card: 215 40% 12%; /* Slightly lighter navy for cards */
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 4% 10%;
+    --popover: 215 40% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 240 4% 10%; /* rich charcoal */
-    --primary-foreground: 0 0% 98%; /* very light grey */
+    /* Primary - Light Blue Accent */
+    --primary: 195 100% 64%; /* Light blue #4DC3FF */
+    --primary-foreground: 215 45% 8%;
 
-    --secondary: 0 0% 94%; /* light grey */
-    --secondary-foreground: 240 4% 10%;
+    /* Secondary - Elegant variants */
+    --secondary: 215 35% 15%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 0 0% 90%; /* pale grey */
-    --muted-foreground: 240 4% 40%; /* mid grey */
+    --muted: 215 30% 18%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 0 0% 92%;
-    --accent-foreground: 240 4% 10%;
+    --accent: 195 100% 64%;
+    --accent-foreground: 215 45% 8%;
 
-    --destructive: 0 60% 50%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 240 4% 85%;
-    --input: 240 4% 85%;
-    --ring: 240 4% 30%;
+    --border: 215 25% 20%;
+    --input: 215 25% 20%;
+    --ring: 195 100% 64%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    /* Sidebar styling */
-    --sidebar-background: 0 0% 96%;
-    --sidebar-foreground: 240 4% 25%;
-    --sidebar-primary: 240 5% 15%;
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 45% 8%) 0%, hsl(215 35% 12%) 50%, hsl(195 100% 10%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(215 40% 12% / 0.8), hsl(215 35% 15% / 0.9));
+    --gradient-accent: linear-gradient(135deg, hsl(195 100% 64%), hsl(195 85% 55%));
+    
+    /* Glass Effects */
+    --glass-bg: hsl(215 40% 12% / 0.25);
+    --glass-border: hsl(195 100% 64% / 0.2);
+    
+    /* Shadows */
+    --shadow-elegant: 0 20px 40px -10px hsl(215 45% 8% / 0.4);
+    --shadow-glow: 0 0 30px hsl(195 100% 64% / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 90%;
-    --sidebar-accent-foreground: 240 4% 15%;
-    --sidebar-border: 240 4% 85%;
-    --sidebar-ring: 240 5% 50%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 240 5% 10%;
-    --foreground: 0 0% 98%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 240 5% 12%;
-    --card-foreground: 0 0% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 240 5% 12%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5% 10%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 240 3% 20%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 240 3% 20%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 240 3% 20%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 50% 40%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 240 3% 25%;
-    --input: 240 3% 25%;
-    --ring: 240 5% 60%;
-
-    --sidebar-background: 240 5% 10%;
-    --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 240 5% 30%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 3% 18%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 240 3% 25%;
-    --sidebar-ring: 240 5% 60%;
-  }
-
-  * {
-    border-color: hsl(var(--border));
-  }
-
-  body {
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
-  }
-  @media only screen and (max-width: 768px) {
-  body {
-    background-image: url('\public\photos\backgroundimage.png');
-    background-size: auto;
-    background-repeat: repeat;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
 }
