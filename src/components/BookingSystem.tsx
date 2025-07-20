@@ -143,7 +143,7 @@ export const BookingSystem = () => {
     );
 
     // Replace with your Lebanese WhatsApp number
-    const whatsappNumber = "+96171234567"; // Replace with your actual number
+    const whatsappNumber = "+96178841832"; // Replace with your actual number
     const bookingUrl = `https://wa.me/${whatsappNumber}?text=${bookingMessage}`;
     
     window.open(bookingUrl, "_blank");
