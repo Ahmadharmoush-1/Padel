@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "./ui/Button";
+import { Button } from "./ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
 import { Play, X, Users, Award, Camera } from "lucide-react";
