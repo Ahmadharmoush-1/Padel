@@ -32,7 +32,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Phone</h3>
-                    <p className="text-muted-foreground">+961 78841832</p>
+                    <p className="text-muted-foreground">+961 78 841 832</p>
                   </div>
                 </div>
               </CardContent>

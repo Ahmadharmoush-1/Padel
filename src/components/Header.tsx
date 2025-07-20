@@ -9,7 +9,7 @@ export const Header = () => {
   };
 
   const openWhatsApp = () => {
-    const whatsappNumber = "+96171234567"; // Replace with your actual Lebanese number
+    const whatsappNumber = "+96178841832"; // Replace with your actual Lebanese number
     const message = encodeURIComponent("Hello! I'd like to know more about your padel courts.");
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
